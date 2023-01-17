@@ -1,0 +1,27 @@
+{
+  "name": "rosa",
+  "version": "1.0.0",
+  "description": "This is the website from /rosa project space",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discombobulateme/rosa.git"
+  },
+  "keywords": [
+    "netart",
+    "strapi",
+    "vue"
+  ],
+  "author": "Paloma Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/discombobulateme/rosa/issues"
+  },
+  "homepage": "https://github.com/discombobulateme/rosa#readme",
+  "dependencies": {
+    "npm": "6.14.18"
+  }
+}
