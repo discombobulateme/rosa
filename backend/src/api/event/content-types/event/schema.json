@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "eventname": {
       "type": "string",
       "required": true,
-      "default": "name",
+      "default": "eventname",
       "unique": true
     },
     "description": {
@@ -26,12 +26,6 @@
     },
     "finish": {
       "type": "datetime"
-    },
-    "artist": {
-      "type": "string",
-      "required": true,
-      "default": "artist",
-      "private": true
     },
     "image": {
       "type": "media",
@@ -44,11 +38,16 @@
         "audios"
       ]
     },
-    "bio": {
-      "type": "text",
-      "default": "bio"
+    "artists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::artist.artist",
+      "inversedBy": "events"
     },
-    "artistphoto": {
+    "sponsor": {
+      "type": "string"
+    },
+    "sponsorlogo": {
       "type": "media",
       "multiple": true,
       "required": false,
